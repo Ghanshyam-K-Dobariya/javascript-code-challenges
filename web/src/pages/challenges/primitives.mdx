@@ -38,6 +38,32 @@ function isInt(value) {
 }
 ```
 
+- Similar way other math operators like (subtract, multiply, power and division work except plus operator)
+
+```js copy
+function isInt(value) {
+  return value - 0 === value;
+}
+```
+
+```js copy
+function isInt(value) {
+  return value * 1 === value;
+}
+```
+
+```js copy
+function isInt(value) {
+  return value ** 1 === value;
+}
+```
+
+```js copy
+function isInt(value) {
+  return value / 1 === value;
+}
+```
+
 ---
 
 ### 3. Create a function which returns a random number in the given range of values both inclusive
